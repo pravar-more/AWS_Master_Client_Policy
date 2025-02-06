@@ -8,7 +8,7 @@ resource "aws_iam_role" "role_for_child" {
         Action    = "sts:AssumeRole"
         Effect    = "Allow"
         Principal = {
-          AWS = "arn:aws:iam::${var.child_account_id}:root"
+          AWS = "arn:aws:iam::${var.CHILD_ACCOUNT_ID}:root"
         }
       }
     ]
