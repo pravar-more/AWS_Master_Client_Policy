@@ -12,6 +12,6 @@ provider "aws" {
   access_key = ""
   secret_key = ""
   assume_role {
-    role_arn = "arn:aws:iam::${var.child_account_id}:role/${var.role_name}"
+    role_arn = "arn:aws:iam::${var.CHILD_ACCOUNT_ID}:role/${var.ROLE_NAME}"
   }
 }
